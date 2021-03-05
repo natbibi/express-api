@@ -12,13 +12,6 @@ router.get('/secret', (req, res) => {
     res.send('hello again');
 });
 
-
-// router.get('/:id', (req, res) => {
-//     const filmID = parseInt(req.params.id)
-//     const selectedFilm = Film.findById(filmID);
-//     res.send(selectedFilm);
-// });
-
 router.get('/:id', (req, res) => {
     try {
         const filmID = parseInt(req.params.id)
@@ -40,7 +33,7 @@ router.delete('/:id', (req, res) => {
     const filmID = parseInt(req.params.id)
     const filmToDestroy = Film.findById(filmID);
     filmToDestroy.destroy()
-    res.status(204).send()
+    res.status(204).send();
 });
 
 module.exports = router;
