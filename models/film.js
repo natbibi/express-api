@@ -5,7 +5,7 @@ class Film {
         this.id = data.id;
         this.name = data.name;
         this.director = data.director;
-        this.genre = "blockbuster hit"
+        this.genre = data.genre || 'blockbuster'
     }
 
     static get all() {
