@@ -30,7 +30,8 @@ class Film {
     }
 
     destroy() {
-
+        const film = filmsData.filter((film) => film.id === this.id)[0];
+        filmsData.splice(filmsData.indexOf(film), 1);  
     }
 }
 
