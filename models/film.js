@@ -5,6 +5,7 @@ class Film {
         this.id = data.id;
         this.name = data.name;
         this.director = data.director;
+        this.genre = "blockbuster hit"
     }
 
     static get all() {
