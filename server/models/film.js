@@ -1,4 +1,4 @@
-const filmData = require('../data');
+const filmsData = require('../data');
 
 class Film {
     constructor(data) {
@@ -14,7 +14,7 @@ class Film {
 
     static findById(id) {
         try {
-            const filmData = filmData.filter((film) => film.id === id)[0];
+            const filmData = filmsData.filter((film) => film.id === id)[0];
             const film = new Film(filmData);
             return film;
         } catch (err) {
@@ -30,7 +30,8 @@ class Film {
     }
 
     destroy() {
-
+        const film = filmsData.filter((film) => film.id === this.id)[0];
+        filmsData.splice(filmsData.indexOf(film), 1);  
     }
 }
 
