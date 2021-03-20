@@ -1,3 +1,3 @@
 # Films API
 
-A simple website with the purpose of generating a random film. Users can also add films to the list. 
+A simple website with the purpose of generating a random film from an express api server. Users can also add films to the list. 
