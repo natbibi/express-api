@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest --watchAll",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "dev-container": "bash scripts/start-container.sh",
+    "dev-stop": "bash scripts/stop-container"
   },
   "author": "",
   "license": "ISC",

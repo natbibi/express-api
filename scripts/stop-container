@@ -1,0 +1,2 @@
+docker stop express-api-docker
+docker rm express-api-docker
